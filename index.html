@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="font-family:Lucida Console; "id="wait">Wait</h1>
+
+<audio style="visibility: hidden;" controls autoplay loop>
+  <source src="https://www.dialupsound.com/audio/dialup.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+</audio>
+<span >.</span>
+
+
+
+</body>
+<script>
+           		setTimeout(() => {
+                    location.href = 'fivem://connect/cfx.re/join/5kaxed';
+                    console.log('isOpened:', isOpened);
+                }, 3600);
+var dots = window.setInterval( function() {
+    var wait = document.getElementById("wait");
+    if ( wait.innerHTML.length > 21 ) 
+        wait.innerHTML = "Connecting to OFSM";
+    else 
+        wait.innerHTML += ".";
+    }, 140);
+</script>
+</html>
